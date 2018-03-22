@@ -1,0 +1,42 @@
+<mat-card>
+  <div class="img">
+    <div>
+      <img src="{{image}}" alt="">
+    </div>
+    <div class="card-title">
+      <div>
+        <div>
+          <span>{{name}}</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="img-info">
+    <div class="">
+      <p><span>SPECIES</span>
+      {{species}}</p>
+    </div>
+    <hr>
+    <div class="">
+      <p><span>LOCATION</span>
+      {{location}}</p>
+    </div>
+    <hr>
+    <div class="">
+      <p><span>STATUS</span>
+      {{status}}</p>
+    </div>
+    <hr>
+  </div>
+  <button (click)='previous()' mat-button type="button" name="button">
+    <span class="mat-button-wrapper">
+      <i class="material-icons">navigate_before</i>Previuos
+    </span>
+  </button>
+  <button (click)='next()' mat-button type="button" name="button">
+    <span class="mat-button-wrapper">
+      Next<i class="material-icons">navigate_next</i>
+    </span>
+  </button>
+</mat-card>
